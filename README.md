@@ -5,6 +5,9 @@ Thanks to pds2k12 for this include, Y_Less for his amazing YSI Library (y_hooks)
 Callbacks
 ============
 public OnFakeKillDetected(playerid)
+
 {
+
     return true;
+    
 }
