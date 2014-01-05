@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 		if(CountDeaths[playerid] >= 10) 
 		{
-			CallLocalFunction("OnFakeKillDetected", "i", playerid);      
+			CallLocalFunction("OnPlayerFakeKill", "i", playerid);      
 			return CountDeaths[playerid] = 0;  
 		}
 		StartDeathTick[playerid] = gettime();
@@ -81,4 +81,4 @@ public OnPlayerDeath(playerid, killerid, reason)
 	forward fk_OnPlayerDeath(playerid, killerid, reason);
 #endif
 
-forward OnFakeKillDetected(playerid);
+forward OnPlayerFakeKill(playerid);
