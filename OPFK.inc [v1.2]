@@ -39,6 +39,9 @@ public OnPlayerDeath(playerid, killerid, reason)
                         return CountDeaths[playerid] = 0;  
                 }
                 StartDeathTick[playerid] = gettime();
+        }
+        else
+        {
                 CountDeaths[playerid] = 0;  
         }
         #if defined fk_OnPlayerDeath
