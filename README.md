@@ -10,3 +10,4 @@ public OnFakeKillDetected(playerid)
 	SendClientMessage(playerid, -1, "You have been banned for fake-killing.");
 	return true;
 }
+a
