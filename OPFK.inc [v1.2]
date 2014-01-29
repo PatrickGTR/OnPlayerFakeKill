@@ -29,6 +29,8 @@ public OnPlayerDeath(playerid, killerid, reason)
 {
         if(IsPlayerNPC(playerid) && killerid == INVALID_PLAYER_ID) return false;
 
+        StartDeathTick[playerid] = gettime();
+
         if(gettime() - StartDeathTick[playerid] < 5000) //5 seconds
         {
                 CountDeaths[playerid] ++;
@@ -38,7 +40,6 @@ public OnPlayerDeath(playerid, killerid, reason)
                         CallLocalFunction("OnPlayerFakeKill", "i", playerid);      
                         return CountDeaths[playerid] = 0;  
                 }
-                StartDeathTick[playerid] = gettime();
         }
         else
         {
