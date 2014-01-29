@@ -13,4 +13,11 @@ public OnFakeKillDetected(playerid)
 	return true;
 	
 }
-## Callback ##
+## Different buttons sizes ##
+
+If you want to make a more prominent or a less prominent call-to-action button, you have options:
+
+	<button class="small button">Button</button>
+	<button class="large button">Button</button>
+	
+## Various buttons colors ##
