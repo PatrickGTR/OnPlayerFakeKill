@@ -1,10 +1,13 @@
-AntiFakeKill
+OnPlayerFakeKill
 ============
-Credits to Y_Less and IpSBruno for Hook Method 7 and pds2k12 for scripting the whole include.
+
+## Credits ##
+Hook Method 7: Y_Less and IpSBruno.
+Include Developer: pds2k12.
+[[uL]Pottus](http://forum.sa-mp.com/showthread.php?t=102865)
 
 ## Callback ##
-
-
+	
 	public OnFakeKillDetected(playerid)
 	{
 		Ban(playerid);
