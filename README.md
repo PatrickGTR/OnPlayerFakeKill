@@ -5,3 +5,8 @@ Thanks to pds2k12 for this include, Y_Less for his amazing YSI Library (y_hooks)
 Callback
 ============
 public OnFakeKillDetected(playerid)
+{
+	Ban(playerid);
+	SendClientMessage(playerid, -1, "You have been banned for fake-killing.");
+	return true;
+}
