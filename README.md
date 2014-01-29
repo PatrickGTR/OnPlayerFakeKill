@@ -7,7 +7,9 @@ Callback
 public OnFakeKillDetected(playerid)
 {
 	Ban(playerid);
+	
 	SendClientMessage(playerid, -1, "You have been banned for fake-killing.");
+	
 	return true;
 }
-a
+
